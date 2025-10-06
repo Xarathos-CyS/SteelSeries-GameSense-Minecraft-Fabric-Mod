@@ -26,7 +26,7 @@ Main changes:
 ## Known Issue
 
 From the SteelSeries SDK side, there’s a problem updating the material of the currently held tool.  
-The mod itself is working — check `Eventreciever.java` for console output confirming tool change events.  
+The mod itself is working; check `Eventreciever.java` for console output confirming tool change events.  
 The issue may reside in the **HTTP requests** sent by the mod.  
 I may investigate this further upon request.
 
