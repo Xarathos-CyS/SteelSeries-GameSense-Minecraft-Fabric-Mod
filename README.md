@@ -46,3 +46,5 @@ To compile:
 - [SteelSeries](https://github.com/SteelSeries) — Original GameSense SDK  
 - [JayJay1989BE](https://github.com/nevoka-be) — Fabric adaptation  
 - [Xarathos-CyS](https://github.com/Xarathos-CyS) — Update to 1.21.x, event system improvements
+
+**For any issues/requests [add a comment or create a new issue here](https://github.com/Xarathos-CyS/SteelSeries-GameSense-Minecraft-Fabric-Mod/issues/1)**
