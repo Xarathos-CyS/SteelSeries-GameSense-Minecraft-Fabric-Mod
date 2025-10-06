@@ -14,4 +14,4 @@ Issue may reside in the HTTP requests sent by the mod, i may look further upon r
 # To run
 This mod uses all files from [JayJay1989BE's mod](https://www.curseforge.com/minecraft/mc-mods/steelseries-gamesense-fabric), modification of source files to include Gradle scheme can be implemented.
 - compile using gradle, and only replace **Eventreciever.java** in JayJay1989BE's mod.
-- ready mod file is included in repo and on [curseforge](https://www.curseforge.com/minecraft/mc-mods/steelseries-gamesense-mod-fabric-fork)
+- ready mod file is included on [curseforge](https://www.curseforge.com/minecraft/mc-mods/steelseries-gamesense-mod-fabric-fork)
