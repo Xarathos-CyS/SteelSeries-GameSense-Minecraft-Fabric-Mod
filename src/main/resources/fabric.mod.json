@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "gamesensemod",
+	"version": "${version}",
+	"name": "GameSenseMod",
+	"description": "SteelSeries GameSense mod for minecraft, ported to fabric, fixed for efficiency and updated to latest minecraft version.",
+	"authors": [
+		"Xarathos-CyS"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/steelseries-gamesense-mod-fabric-fork",
+		"sources": "https://github.com/Xarathos-CyS/SteelSeries-GameSense-Minecraft-Fabric-Mod/"
+	},
+	"license": "MIT-1",
+	"icon": "assets/gamesensemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.sse3.gamesense.GameSenseMod.GameSenseMod"
+		],
+		"fabric-datagen": [
+			"com.sse3.gamesense.GameSenseMod.GameSenseModDataGenerator"
+		]
+	},
+	"mixins": [
+		"gamesensemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

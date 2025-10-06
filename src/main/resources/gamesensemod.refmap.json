@@ -1,0 +1,26 @@
+{
+  "mappings": {
+    "com/sse3/gamesense/GameSenseMod/mixin/ClientLevelMixin": {
+      "<init>": "Lnet/minecraft/client/world/ClientWorld;<init>(Lnet/minecraft/client/network/ClientPlayNetworkHandler;Lnet/minecraft/client/world/ClientWorld$Properties;Lnet/minecraft/registry/RegistryKey;Lnet/minecraft/registry/entry/RegistryEntry;IILnet/minecraft/client/render/WorldRenderer;ZJI)V"
+    },
+    "com/sse3/gamesense/GameSenseMod/mixin/MinecraftMixin": {
+      "close": "Lnet/minecraft/client/MinecraftClient;close()V"
+    },
+    "com/sse3/gamesense/GameSenseMod/mixin/PlayerMixin": {
+      "tick": "Lnet/minecraft/entity/LivingEntity;tick()V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "com/sse3/gamesense/GameSenseMod/mixin/ClientLevelMixin": {
+        "<init>": "Lnet/minecraft/client/world/ClientWorld;<init>(Lnet/minecraft/client/network/ClientPlayNetworkHandler;Lnet/minecraft/client/world/ClientWorld$Properties;Lnet/minecraft/registry/RegistryKey;Lnet/minecraft/registry/entry/RegistryEntry;IILnet/minecraft/client/render/WorldRenderer;ZJI)V"
+      },
+      "com/sse3/gamesense/GameSenseMod/mixin/MinecraftMixin": {
+        "close": "Lnet/minecraft/client/MinecraftClient;close()V"
+      },
+      "com/sse3/gamesense/GameSenseMod/mixin/PlayerMixin": {
+        "tick": "Lnet/minecraft/entity/LivingEntity;tick()V"
+      }
+    }
+  }
+}

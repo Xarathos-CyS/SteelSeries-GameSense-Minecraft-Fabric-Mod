@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Specification-Title: GameSenseMod
+Specification-Vendor: Xarathos-CyS
+Specification-Version: 1.15.1
+Implementation-Title: fabric
+Implementation-Version: 1.15.1
+Implementation-Vendor: Xarathos-CyS
+Built-On-Minecraft: 1.21.8
+Fabric-Jar-Type: classes
+Fabric-Loom-Mixin-Remap-Type: mixin
+Fabric-Gradle-Version: 8.14.1
+Fabric-Loom-Version: 1.10.5
+Fabric-Mixin-Compile-Extensions-Version: 0.6.0
+Fabric-Minecraft-Version: 1.21.5
+Fabric-Tiny-Remapper-Version: 0.11.1
+Fabric-Loader-Version: 0.16.14
+Fabric-Mixin-Version: 0.15.5+mixin.0.8.7
+Fabric-Mixin-Group: net.fabricmc
+Fabric-Mapping-Namespace: intermediary
+
