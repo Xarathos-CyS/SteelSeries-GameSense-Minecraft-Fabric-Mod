@@ -1,0 +1,4 @@
+---0.2.0+1.21.9-1.21.10---
+  * Updated src/main/java/com/sse3/gamesense/GameSenseMod/mixin/PlayerMixin.java
+  - Mappings starting 1.21.9; player.getWorld() is now player.getEntityWorld()
+---end of changelog---
