@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class PlayerMixin {
     @Inject(method = "tick", at = @At("HEAD"))
     private void onTick(CallbackInfo info) {
-        if ((Object)this instanceof ClientPlayerEntity player && player.getWorld().isClient) {
+        if ((Object)this instanceof ClientPlayerEntity player && player.getEntityWorld().isClient()) {
             Services.EVENT.firePlayerTickEvent(player);
         }
     }
