@@ -46,8 +46,10 @@ To compile:
 1. Use **Gradle** to build the project, ensure structure is under src/main/ and use the [Fabric Template Mod Generator](https://fabricmc.net/develop/template/) for a proper dev env.
 2. Rename the `.jar` to `.rar` or `.zip`
 3. Replace only `Eventreciever.java` in JayJay1989BE’s mod source, if the build was successful it should be a `.class` extension.
-4. Rename back to `.jar`.  
-5. Drop into your mods folder and launch the game.
+   
+   ***for pre 1.21.2 and post 1.21.8, mappings are different, [check the changelog](https://github.com/Xarathos-CyS/SteelSeries-GameSense-Minecraft-Fabric-Mod/blob/main/CHANGELOG) to ensure you have the correct files.**
+5. Rename back to `.jar`.  
+6. Drop into your mods folder and launch the game.
 
 ---
 
