@@ -12,7 +12,7 @@ originally published on [CurseForge](https://www.curseforge.com/minecraft/mc-mod
 ## Downloads
 
 - You can get the ready `.jar` from [Curseforge](https://www.curseforge.com/minecraft/mc-mods/steelseries-gamesense-fabric-continued),
-- Or in `.zip` form in [releases](https://github.com/Xarathos-CyS/SteelSeries-GameSense-Minecraft-Fabric-Mod/releases/tag/1.21.x).
+- Or in `.zip` form in [releases](https://github.com/Xarathos-CyS/SteelSeries-GameSense-Minecraft-Fabric-Mod/releases).
 
 ---
 
