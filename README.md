@@ -9,6 +9,13 @@ originally published on [CurseForge](https://www.curseforge.com/minecraft/mc-mod
 
 ---
 
+## Downloads
+
+- You can get the ready `.jar` from [Curseforge](https://www.curseforge.com/minecraft/mc-mods/steelseries-gamesense-fabric-continued),
+- Or in `.zip` form in [releases](https://github.com/Xarathos-CyS/SteelSeries-GameSense-Minecraft-Fabric-Mod/releases/tag/1.21.x).
+
+---
+
 ## Compiling Notes
 
 The provided source code is **de-obfuscated** and may have issues running,  
@@ -36,9 +43,11 @@ I may investigate this further upon request.
 
 This mod relies on all files from [JayJay1989BE’s Fabric mod](https://www.curseforge.com/minecraft/mc-mods/steelseries-gamesense-fabric).  
 To compile:
-1. Use **Gradle** to build the project.  
-2. Replace only `Eventreciever.java` in JayJay1989BE’s mod source.  
-3. A ready-to-use `.jar` is available on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/steelseries-gamesense-mod-fabric-fork).
+1. Use **Gradle** to build the project, ensure structure is under src/main/ and use the [Fabric Template Mod Generator](https://fabricmc.net/develop/template/) for a proper dev env.
+2. Rename the `.jar` to `.rar` or `.zip`
+3. Replace only `Eventreciever.java` in JayJay1989BE’s mod source, if the build was successful it should be a `.class` extension.
+4. Rename back to `.jar`.  
+5. Drop into your mods folder and launch the game.
 
 ---
 
