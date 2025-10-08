@@ -1,4 +1,5 @@
 ---0.2.0+1.21.9-1.21.10---
   * Updated src/main/java/com/sse3/gamesense/GameSenseMod/mixin/PlayerMixin.java
   - Mappings starting 1.21.9 have changed; player.getWorld() is now player.getEntityWorld()
+  - ensure the proper file(s) from the branch: https://github.com/Xarathos-CyS/SteelSeries-GameSense-Minecraft-Fabric-Mod/tree/1.21.9-1.21.10
 ---end of changelog---
