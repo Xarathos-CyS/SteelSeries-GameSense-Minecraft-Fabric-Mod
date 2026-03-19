@@ -58,4 +58,4 @@ To remedy that, I've either disabled the attempt to show some tools (shield, bow
 Note: Versions prior to 1.21.11 in this repository are based on earlier community work.
 The 1.21.11+ version is a full rewrite with no reused code.
 
-**For any issues/requests [add a comment or create a new issue here](https://github.com/Xarathos-CyS/SteelSeries-GameSense-Minecraft-Fabric-Mod/issues/1)**
+**For any issues/requests [add a comment or create a new issue here](https://github.com/Xarathos-CyS/SteelSeries-GameSense-Minecraft-Fabric-Mod/issues/1).**
