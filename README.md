@@ -49,7 +49,7 @@ To remedy that, I've either disabled the attempt to show some tools (shield, bow
 
 ---
 
-### Credits / History
+## Credits / History
 
 - Original GameSense integration by [SteelSeries](https://github.com/SteelSeries).
 - Community implementations (Forge / early Fabric) inspired this project.
