@@ -1,5 +1,43 @@
 ---0.2.0+1.21.9-1.21.10---
-  * Updated src/main/java/com/sse3/gamesense/GameSenseMod/mixin/PlayerMixin.java
-  - Mappings starting 1.21.9 have changed; player.getWorld() is now player.getEntityWorld()
-  - ensure the proper file(s) from the branch: https://github.com/Xarathos-CyS/SteelSeries-GameSense-Minecraft-Fabric-Mod/tree/1.21.9-1.21.10
+ 
+* Updated src/main/java/com/sse3/gamesense/GameSenseMod/mixin/PlayerMixin.java.
+  - Mappings starting 1.21.9 have changed; player.getWorld() is now player.getEntityWorld().
+  - ensure the proper file(s) from the branch: https://github.com/Xarathos-CyS/SteelSeries-GameSense-Minecraft-Fabric-Mod/tree/1.21.9-1.21.10.
+
+---1.0.0+1.21.11---
+
+### Core Changes
+* Full rewrite of the mod for Minecraft 1.21.11+ using Mojang official mappings.
+  - Reimplemented SteelSeries GameSense integration from scratch.
+  - Replaced blocking HTTP calls with async requests.
+  - Fixed long-standing bug where tool display only updated after alt-tab / world reload, Now updates instantly on item switch (forced refresh workaround).
+  - Fixed keyboard not updating immediately after regaining focus.
+  - Fixed connection errors caused by dynamic GameSense port changes.
+  - Fixed event spam causing unnecessary load.
+  - Removed crashes caused by synchronous HTTP requests.
+
+### Improvements
+  - Cleaner and smaller codebase (removed unused legacy systems).
+  - Robust handling of null states (player/world checks).
+
+### Notes / Limitations
+- SteelSeries GG only supports a predefined set of tools:
+    - Mace, Spear, Trident, Shield, Flint and Steel, Bow, Crossbow, fishing rod, all Copper tools, are not defined by the SteelSeries plugin.
+- Some items are mapped to closest equivalents for compatibility:
+    - Mace will display an Iron Axe.
+    - Spears will display Shovels.
+    - Tridents will display a Diamond Sword.
+    - Copper tools will display wooden tools.
+    - Netherite tools will display stone tools.
+    - Flint and Steel will display shears.
+
+### Removed / Dropped
+- Legacy mixins
+- Time-of-day event (unused by SteelSeries GG)
+- Broken/unused event handlers from older implementations
+
+### Previous Versions (1.21.9 - 1.21.10)
+These versions were based on community-maintained Fabric ports.
+They are kept for compatibility/reference but are no longer maintained.
+
 ---end of changelog---
