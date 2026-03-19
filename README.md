@@ -1,61 +1,61 @@
-# SteelSeries GameSense Minecraft (Fabric Mod)
+# SteelSeries GameSense Minecraft Mod - for Fabric (Modern rewrite)
 
-This mod is based on the [SteelSeries GameSense SDK](https://github.com/SteelSeries/gamesense-sdk),  
-forked from [JayJay1989BE's Fabric implementation](https://github.com/nevoka-be/gamesense-sdk),  
+A modern rewrite of the SteelSeries GameSense Minecraft integration for 1.21.11+.
+This mod is based on the [SteelSeries GameSense SDK](https://github.com/SteelSeries/gamesense-sdk),
 originally published on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/steelseries-gamesense-fabric).
 
-- The original was a Forge-only mod by [SteelSeries](https://github.com/SteelSeries).  
-- This version is a continuation and update for [Fabric](https://github.com/FabricMC).
-
+- This mod only runs on [Fabric](https://github.com/FabricMC).
+- This version is a complete rewrite from scratch to work with SteelSeries GameSense API Through the SteelSeries GG application.
 ---
 
 ## Downloads
 
-- You can get the ready `.jar` from [Curseforge](https://www.curseforge.com/minecraft/mc-mods/steelseries-gamesense-fabric-continued),
-- Or in `.zip` form in [releases](https://github.com/Xarathos-CyS/SteelSeries-GameSense-Minecraft-Fabric-Mod/releases).
+- You can get the ready mod file from [Curseforge](https://www.curseforge.com/minecraft/mc-mods/steelseries-gamesense-fabric-continued),
+- Or from the [releases](https://github.com/Xarathos-CyS/SteelSeries-GameSense-Minecraft-Fabric-Mod/releases) page.
 
 ---
 
-## Compiling Notes
-
-The provided source code is **de-obfuscated** and may have issues running,  
-even after a successful build using [Gradle](https://github.com/gradle/gradle).  
-Please consider the source code **for reference only**.
-
-Main changes:
-- Modified `src/main/java/com/sse3/gamesense/GameSenseMod/Eventreciever.java`, which contains the core logic.
-- The original and JayJay1989BE’s implementation used **1-second polling**, which caused slow and inefficient updates in Fabric.
-- This version hooks directly into game events, allowing **instant updates**.
-- Updated support from **Minecraft 1.20.x → 1.21.x**.
+## Why Rewrite?
+- 1.21.11 update removed many integral libraries and modules the previous versions relied on.
+- Complete working sourcecode was not available and the previous versions were incomplete reverse engineered implementations.
+- The transition to Mojang's official mappings in the 1.21.11 update caused many problems with the previous versions.
+- Code fixes were practically impossible due to the immense reliance on obfuscated code from the previous versions.
 
 ---
 
-## Known Issue
+## Changes and fixes:
+- direct hooks to game events in contrast to time based polling for instant updates of the SteelSeries hardware.
+- Removed unnecessary code and implementations that never worked in previous versions (e.g. sending time of day updates, attempting to display bow/fishing rod/crossbow).
+- fixed a long lasting bug since the [original SDK implementation](https://github.com/SteelSeries/gamesense-sdk).
+- Sending of game events through modern libraries and modules. 
 
-From the SteelSeries SDK side, there’s a problem updating the material of the currently held tool.  
-The mod itself is working; check `Eventreciever.java` for console output confirming tool change events.  
-The issue may reside in the **HTTP requests** sent by the mod.  
-I may investigate this further upon request.
+## Tool display now works!
+Since the 1.7 original mod was made by SteelSeries, displaying the current held item on keyboards did not work; the tool would only show up after unfocusing the game window/rejoining the world. It is now fixed! however, please bear the following in mind:
 
----
+The items that can be displayed are statically present only on the SteelSeries GG application and cannot be altered unless SteelSeries updates the plugin. this means that every weapon beyond 1.8 (trident, mace, copper tools, spear, etc.) cannot be displayed on your keyboard.
 
-## How to Build & Run
-
-This mod relies on all files from [JayJay1989BE’s Fabric mod](https://www.curseforge.com/minecraft/mc-mods/steelseries-gamesense-fabric).  
-To compile:
-1. Use **Gradle** to build the project, ensure structure is under src/main/ and use the [Fabric Template Mod Generator](https://fabricmc.net/develop/template/) for a proper dev env.
-2. Rename the `.jar` to `.rar` or `.zip`
-3. Replace only `Eventreciever.java` in JayJay1989BE’s mod source, if the build was successful it should be a `.class` extension.
-   
-   ***for pre 1.21.2 and post 1.21.8, mappings are different, [check the changelog](https://github.com/Xarathos-CyS/SteelSeries-GameSense-Minecraft-Fabric-Mod/blob/main/CHANGELOG) to ensure you have the correct files.**
-5. Rename back to `.jar`.  
-6. Drop into your mods folder and launch the game.
+To remedy that, I've either disabled the attempt to show some tools (shield, bow, crossbow, fishing rod) or likened the tools to others that look similar enough. Please refer to the [changelog](https://github.com/Xarathos-CyS/SteelSeries-GameSense-Minecraft-Fabric-Mod/blob/main/CHANGELOG) for the full changes.
 
 ---
 
-### Credits
-- [SteelSeries](https://github.com/SteelSeries) — Original GameSense SDK  
-- [JayJay1989BE](https://github.com/nevoka-be) — Fabric adaptation  
-- [Xarathos-CyS](https://github.com/Xarathos-CyS) — Update to 1.21.x, event system improvements
+## How to Build, Run and Use
+
+*pre 1.21.11 versions are no longer supported. consider their source code for reference only.
+
+1. Use `./gradlew build` in project root to build, output mod jar will be in `/build/libs/`.
+*The provided source files are free of cache or generated data.
+2. Drop into your mods folder and launch the game.
+3. You will need the SteelSeries GG application to use this mod. navigate to `"Engine"` then to `"Apps"` and turn on the `"Gamesense Minecraft Mod"` plugin, ensure to `configure` your Steelseries hardware and it will show game statuses based on that!
+
+---
+
+### Credits / History
+
+- Original GameSense integration by [SteelSeries](https://github.com/SteelSeries).
+- Community implementations (Forge / early Fabric) inspired this project.
+- Special thanks to [JayJay1989BE](https://github.com/JayJay1989) for maintaining a Fabric version up to 1.21.5.
+
+Note: Versions prior to 1.21.11 in this repository are based on earlier community work.
+The 1.21.11+ version is a full rewrite with no reused code.
 
 **For any issues/requests [add a comment or create a new issue here](https://github.com/Xarathos-CyS/SteelSeries-GameSense-Minecraft-Fabric-Mod/issues/1)**
