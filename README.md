@@ -4,7 +4,7 @@ A modern rewrite of the SteelSeries GameSense Minecraft integration for 1.21.11+
 This mod is based on the [SteelSeries GameSense SDK](https://github.com/SteelSeries/gamesense-sdk),
 originally published on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/steelseries-gamesense-fabric).
 
-- This mod only runs on [Fabric](https://github.com/FabricMC).
+- This mod only runs on [Fabric](https://github.com/FabricMC) and requires [Fabric API](https://github.com/FabricMC/fabric-api) to run.
 - This version is a complete rewrite from scratch to work with SteelSeries GameSense API Through the SteelSeries GG application.
 ---
 
