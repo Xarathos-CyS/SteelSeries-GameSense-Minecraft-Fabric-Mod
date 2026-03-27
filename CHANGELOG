@@ -40,4 +40,10 @@
 These versions were based on community-maintained Fabric ports.
 They are kept for compatibility/reference but are no longer maintained.
 
+---1.1.0+26.1---
+
+Update to 26.1.
+*26.1 now requires java 25, adjusted to build using it and updated fabric api, loom, fabric loader versions.
+*only changes are in fabric.mod.json and gradle.properties, no changes in mod files needed.
+
 ---end of changelog---
