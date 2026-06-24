@@ -46,4 +46,9 @@ Update to 26.1.
 *26.1 now requires java 25, adjusted to build using it and updated fabric api, loom, fabric loader versions.
 *only changes are in fabric.mod.json and gradle.properties, no changes in mod files needed.
 
+---1.2.0+26.2---
+
+Update to 26.2.
+*only changes are in fabric.mod.json and gradle.properties, no changes in mod files needed.
+
 ---end of changelog---
